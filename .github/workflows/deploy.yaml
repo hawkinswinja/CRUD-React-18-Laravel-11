@@ -38,5 +38,5 @@ jobs:
         run: |
           echo "$KEY" | tee key.pem > /dev/null
           chmod 600 key.pem
-          scp -i key.pem -o StrictHostKeyChecking=no -r ./view $USER@$SERVER:/temp/app
+          scp -i key.pem -o StrictHostKeyChecking=no -r ./view $USER@$SERVER:/tmp/app
           rm key.pem
